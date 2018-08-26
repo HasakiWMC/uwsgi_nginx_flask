@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 bin_path=$(dirname $(readlink -f $0))
 cd $bin_path
 

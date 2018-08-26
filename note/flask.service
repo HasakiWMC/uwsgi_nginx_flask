@@ -1,0 +1,20 @@
+# start nginx+uwsgi when start os
+# Step 5 of
+# https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
+# 1.copy to /etc/systemd/system/flask.service
+# 2.sudo systemctl start flask          #启动
+# 4.sudo systemctl stop flask           #停止
+# 5.sudo systemctl enable flask         #开机自动启动
+# 6.sudo systemctl status flask     #输出运行状态
+# 7.systemctl daemon-reload             #重新载入 systemd，扫描新的或有变动的单元
+
+[Unit]
+Description=uWSGI+nginx+flask instance to serve myproject
+After=network.target
+
+[Service]
+ExecStart=/usr1/pyProject/myFlask/bin/startWeb_root.sh
+ExecStop=/usr1/pyProject/myFlask/bin/stopWeb_root.sh
+
+[Install]
+WantedBy=multi-user.target
