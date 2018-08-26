@@ -5,7 +5,7 @@
 # 2.sudo systemctl start flask          #启动
 # 4.sudo systemctl stop flask           #停止
 # 5.sudo systemctl enable flask         #开机自动启动
-# 6.sudo systemctl status flask     #输出运行状态
+# 6.sudo systemctl status flask         #输出运行状态
 # 7.systemctl daemon-reload             #重新载入 systemd，扫描新的或有变动的单元
 
 [Unit]
