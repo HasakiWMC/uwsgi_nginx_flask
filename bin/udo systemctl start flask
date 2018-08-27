@@ -1,0 +1,17 @@
+● flask.service - uWSGI+nginx+flask instance to serve myproject
+   Loaded: loaded (/etc/systemd/system/flask.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Mon 2018-08-27 01:17:54 CST; 39s ago
+  Process: 4540 ExecStop=/usr1/pyProject/myFlask/bin/stopWeb_root.sh (code=exited, status=0/SUCCESS)
+  Process: 4487 ExecStart=/usr1/pyProject/myFlask/bin/startWeb_root.sh (code=killed, signal=TERM)
+ Main PID: 4487 (code=killed, signal=TERM)
+
+Aug 27 01:17:54 ubuntu startWeb_root.sh[4487]: start uwsgi failed
+Aug 27 01:17:54 ubuntu startWeb_root.sh[4487]: Mon Aug 27 01:17:54 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Aug 27 01:17:54 ubuntu startWeb_root.sh[4487]: Mon Aug 27 01:17:54 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Aug 27 01:17:54 ubuntu startWeb_root.sh[4487]: Mon Aug 27 01:17:54 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Aug 27 01:17:54 ubuntu stopWeb_root.sh[4540]: kill 4515
+Aug 27 01:17:54 ubuntu stopWeb_root.sh[4540]: kill 4521
+Aug 27 01:17:54 ubuntu stopWeb_root.sh[4540]: kill 4522
+Aug 27 01:17:54 ubuntu stopWeb_root.sh[4540]: kill 4523
+Aug 27 01:17:54 ubuntu stopWeb_root.sh[4540]: kill 4524
+Aug 27 01:17:54 ubuntu systemd[1]: Stopped uWSGI+nginx+flask instance to serve myproject.
